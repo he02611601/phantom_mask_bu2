@@ -2,11 +2,11 @@
 > The Current content is an **example template**; please edit it to fit your style and content.
 
 ## Requirement Completion Rate
-* [v] List pharmacies, optionally filtered by specific time and/or day of the week.
+* [x] List pharmacies, optionally filtered by specific time and/or day of the week.
   * Implemented at xxx API.
-* [v] List all masks sold by a given pharmacy with an option to sort by name or price.
+* [x] List all masks sold by a given pharmacy with an option to sort by name or price.
   * Implemented at xxx API.
-* [v] List all pharmacies that offer a number of mask products within a given price range, where the count is above, below, or between given thresholds.
+* [x] List all pharmacies that offer a number of mask products within a given price range, where the count is above, below, or between given thresholds.
   * Implemented at xxx API.
 * [ ] Show the top N users who spent the most on masks during a specific date range.
   * Implemented at xxx API.
