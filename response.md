@@ -2,11 +2,11 @@
 > The Current content is an **example template**; please edit it to fit your style and content.
 
 ## Requirement Completion Rate
-* [ ] List pharmacies, optionally filtered by specific time and/or day of the week.
+* [v] List pharmacies, optionally filtered by specific time and/or day of the week.
   * Implemented at xxx API.
-* [ ] List all masks sold by a given pharmacy with an option to sort by name or price.
+* [v] List all masks sold by a given pharmacy with an option to sort by name or price.
   * Implemented at xxx API.
-* [ ] List all pharmacies that offer a number of mask products within a given price range, where the count is above, below, or between given thresholds.
+* [v] List all pharmacies that offer a number of mask products within a given price range, where the count is above, below, or between given thresholds.
   * Implemented at xxx API.
 * [ ] Show the top N users who spent the most on masks during a specific date range.
   * Implemented at xxx API.
@@ -28,15 +28,6 @@ Please run these two script commands to migrate the data into the database.
 
 ```bash
 $ go run script/load_data.go
-```
-
-## Test Coverage Report
-I wrote down the xx unit tests for the APIs I built. Please check the test coverage report here.
-
-You can run the test script by using the command below:
-
-```bash
-bundle exec rspec spec
 ```
 
 ## Deployment
