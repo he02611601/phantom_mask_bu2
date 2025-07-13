@@ -27,8 +27,7 @@
 Please run these two script commands to migrate the data into the database.
 
 ```bash
-$ rake import_data:pharmacies[PATH_TO_FILE]
-$ rake import_data:users[PATH_TO_FILE]
+$ go run script/load_data.go
 ```
 
 ## Test Coverage Report
@@ -44,35 +43,11 @@ bundle exec rspec spec
 * To deploy the project locally using Docker, run the following commands:
 
 ```bash
-# Build the Docker image with development environment
-$ docker build --build-arg ENV=development -t my-project:1.0.0 .
-
-# Start the service using docker-compose
+# 建立資料庫
 $ docker-compose up -d
 
-# Access the container to run data import tasks
-$ docker exec -it my-project bash
-$ rake import_data:pharmacies[PATH_TO_FILE]
-$ rake import_data:user[PATH_TO_FILE]
-```
-
-* If you do not use Docker, please provide detailed instructions including the following:
-1. Environment Requirements
-2. Build & Run Steps
-
-```bash
-# Install dependencies
-$ bundle install
-
-# Set up the database (sample config/database.yml may be provided)
-$ rails db:setup
-
-# Import data
-$ rake import_data:pharmacies[PATH_TO_FILE]
-$ rake import_data:user[PATH_TO_FILE]
-
-# Start the server
-$ rails server
+# 導入資料
+$ go run script/load_data.go
 ```
 
 > * If any environment variables are required, please include instructions (e.g., create a .env file).
