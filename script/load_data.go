@@ -41,18 +41,14 @@ type UserRaw struct {
 }
 
 // 星期轉換成整數資料
-var DayOfWeek map[string]int
-
-func init() {
-	DayOfWeek = map[string]int{
-		"Mon":  1,
-		"Tue":  2,
-		"Wed":  3,
-		"Thur": 4,
-		"Fri":  5,
-		"Sat":  6,
-		"Sun":  7,
-	}
+var DayOfWeek = map[string]int{
+	"Mon":  1,
+	"Tue":  2,
+	"Wed":  3,
+	"Thur": 4,
+	"Fri":  5,
+	"Sat":  6,
+	"Sun":  7,
 }
 
 func parseOpeningHours(raw string) []model.PharmacyOpenHour {
